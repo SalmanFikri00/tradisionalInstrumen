@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Stalemate&display=swap');
+
+:root {
+    --bgcolor: #0A0501;
+    --textcolor: #0A0501;;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+h1 {
+    font-size: 89.76px;
+}
+
+h2 {
+    font-size: 67.34px;
+}
+
+h3 {
+    font-size: 50.52px;
+}
+
+h4{
+    font-size: 37.9px;
+}
+
+h5 {
+    font-size: 28.43px;
+}
+
+h6 {
+    font-size: 21.33px;
+}
+
+p {
+    font-size: 16px;
+}
+
+@media screen and ( max-width: 500px ) {
+
+    h1 {
+        font-size: 35.83px;
+    }
+    
+    h2 {
+        font-size: 29.86px;
+    }
+    
+    h3 {
+        font-size: 24.88px;
+    }
+    
+    h4{
+        font-size: 20.74px;
+    }
+    
+    h5 {
+        font-size: 17.28px;
+    }
+    
+    h6 {
+        font-size: 14.4px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+}
