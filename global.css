@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Stalemate&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
     --bgcolor: #0A0501;
-    --textcolor: #0A0501;;
+    --textcolor: #0A0501;
     --listcolor: #CCAC92;
 }
 
@@ -11,37 +13,84 @@
     margin: 0;
 }
 
+#box {
+    pointer-events: none;
+}
+
+.b1 {
+    pointer-events: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translate(-50% , -50%);
+    border: 2px solid #CCAC92;
+    position: fixed;
+    z-index: 10;
+    /* transition: .1s; */
+    
+}
+
+
 body {
     background-color: var(--bgcolor);
 }
 
 h1 {
+    color: #CCAC92;
     font-size: 89.76px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 h2 {
+    color: #CCAC92;
     font-size: 67.34px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 h3 {
+    color: #CCAC92;
     font-size: 50.52px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 h4{
+    color: #CCAC92;
     font-size: 37.9px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 h5 {
+    color: #CCAC92;
     font-size: 28.43px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 h6 {
     font-size: 21.33px;
+    color: #CCAC92;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 p {
     font-size: 16px;
+    color: #CCAC92;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
+
+i {
+    color: var(--listcolor);
+}
+
+
+
+
 
 @media screen and ( max-width: 500px ) {
 
