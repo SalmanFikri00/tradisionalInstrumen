@@ -7,76 +7,153 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <nav class=" flex w-full px-[104px] py-[30px] border justify-between ">
-        <div>
-            <h6>Moesik</h6>
-        </div>
-        <div>
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div>
+<body data-scroll-container="">
 
+    <div class="tirai flex flex-col justify-center p-12 font-light z-40">
+        <div>
+            <p class="text-[40px]" data-aos="fade-right"  data-aos-easing="ease-out-cubic" data-aos-duration="700">Harta Karun Budaya:</p>
+            <h1 class="text-[120px] " data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1400">
+                Tradisional Instrumen
+            </h1>
+        </div>
+        <div class="w-full flex justify-center p-12">
+            <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="400" id="progress">sedang memuat</p>
+        </div>
+    </div>
+
+    <div class="fixed navpage">
+        <nav class=" flex w-full px-[104px] py-[30px] justify-between fixed z-20">
+            <div>
+                <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
+            </div>
+            <div>
+                <i class="fa-solid fa-xmark" onclick="closeNavPage()" alt="" onmouseover="hoverBox()" onmouseout="resetBox()"></i>
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/image/users.svg" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
+                <img src="./assets/image/volume.svg" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <nav class=" flex w-full px-[104px] py-[30px] justify-between fixed z-20">
+        <div>
+            <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
+        </div>
+        <div>
+            <img src="./assets/image/menu.svg" onclick="openNavPage()" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
+        </div>
+        <div class="flex gap-2">
+            <img src="./assets/image/users.svg" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
+            <img src="./assets/image/volume.svg" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
         </div>
     </nav>
-    <section>
+
+
+
+
+    <section class=" flex-col landingpage py-[15vh] px-[50px] flex justify-between relative" data-scroll-section="">
+        <div class="">
+            <h1 data-scroll="" data-scroll-speed="-.2" class=" w-auto -mb-14 tracking-widest text-[128px] title pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Tradisional Instrumen</h1>
+            <p data-scroll="" data-scroll-speed="-.2" class=" px-12 pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Harta Karun Budaya</p>
+        </div>
+        <div class="h-[20vh] flex justify-end px-[6vw] pointer">
+            <a href="#about" class="flex items-center flex-col" data-scroll="" data-scroll-speed=".5" onmouseover="hoverBox()" onmouseout="resetBox()">
+                <p>Scroll Down</p>
+                <img src="./assets/image/Arrow.svg" alt="">
+            </a>
+        </div>
+
+        <div class="absolute bottom-0 bgeffect z-10 w-full h-[20vh] "></div>
     </section>
-    <section>
+
+
+
+    <section id="about">
         <p data-scroll="" data-scroll-speed=".5" onmouseover="hoverBox()" onmouseout="resetBox()">dced</p>
         <p data-scroll="" data-scroll-speed=".2" onmouseover="hoverBox()" onmouseout="resetBox()">dced</p>
     </section>
 
 
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/9740886e95.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
     <script>
-    (function () {
-        const locomotiveScroll = new LocomotiveScroll({
-    lenisOptions: {
-        wrapper: window,
-        content: document.documentElement,
-        lerp: 0.2,
-        duration: 2.5,
-        orientation: 'vertical',
-        gestureOrientation: 'vertical',
-        smoothWheel: true,
-        smoothTouch: true,
-        wheelMultiplier: 1,
-        touchMultiplier: 1,
-        normalizeWheel: true,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-    },
-});
+
 
 const boxJs = document.createElement('div')
+const navpage = document.querySelector('.navpage')
+const title = document.querySelector('.title')
+const progress = document.getElementById("progress")
 boxJs.id = 'box'
 boxJs.className = 'b1'
-// btn.style.transition = '.2s'
+document.body.appendChild(boxJs)
+const box = document.getElementById('box')
+const tirai = document.querySelector('.tirai')
 
-    
-    document.body.appendChild(boxJs)
+AOS.init();
 
-    })();
-    const box = document.getElementById('box');
-    
+
+
+        const locomotiveScroll = new LocomotiveScroll({
+            autoStart: false,
+            lenisOptions: {
+                wrapper: window,
+                content: document.documentElement,
+                lerp: 0.2,
+                duration: 2.5,
+                orientation: 'vertical',
+                gestureOrientation: 'vertical',
+                smoothWheel: true,
+                smoothTouch: true,
+                wheelMultiplier: 1,
+                touchMultiplier: 1,
+                normalizeWheel: true,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+            },
+        });
+
+
+
+
+    const openNavPage = () => {
+        
+        navpage.style.top = '0px'
+        locomotiveScroll.stop()
+    }
+
+
+    const closeNavPage = () => {
+        navpage.style.top = (0-window.innerHeight)+'px'
+        locomotiveScroll.start()
+
+    }
+
     const hoverBox = () => {
-
+    
         box.style.transform = 'translate( -50% , -50% ) scale(1.7)';
         box.style.opacity = '.5';
         box.style.borderRadius = '50%'
-}
-const resetBox = () => {
-    box.style.transform = 'translate( -50% , -50% ) scale(1.2)';
-    box.style.opacity = '1';
-    box.style.borderRadius = '50%'
+    }
 
-
- }
-
-
+    const resetBox = () => {
+        box.style.transform = 'translate( -50% , -50% ) scale(1.2)';
+        box.style.opacity = '1';
+        box.style.borderRadius = '50%'
+        
+        
+    }
+    
+    
+    
     document.addEventListener('mousemove', function(event) {
         setTimeout(() => {
             let x = event.clientX;
@@ -85,6 +162,35 @@ const resetBox = () => {
             box.style.top = y + 'px';
         }, 20);
     });
+
+    window.addEventListener('scroll', (event) => {
+        title.style.left = window.scrollY + 'px';
+    })
+
+
+
+
+    const bukaTirai = () => {
+        tirai.style.top = (0-window.innerHeight)+'px'
+        locomotiveScroll.start()
+
+    }
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            progress.textContent ='sebentar lagi'
+        }, 1000);
+        setTimeout(() => {
+            progress.textContent ='selamat menikmati'
+        }, 2000);        
+        setTimeout(() => {
+            bukaTirai()
+        }, 3000);
+    })
+
 </script>
 </body>
 </html>

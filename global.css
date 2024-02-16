@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Stalemate&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 :root {
     --bgcolor: #0A0501;
     --textcolor: #0A0501;
@@ -11,6 +9,24 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: var(--listcolor);
+    border-radius: 7px;
+    
+}
+
+::-webkit-scrollbar-track{
+    /* background-color: #CCAC92; */
+    position: fixed;
+    width: 10px;
 }
 
 #box {
@@ -25,15 +41,53 @@
     transform: translate(-50% , -50%);
     border: 2px solid #CCAC92;
     position: fixed;
-    z-index: 10;
+    z-index: 50;
     /* transition: .1s; */
     
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+.tirai {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgcolor);
+    /* background-image: url('./assets/image/tiraibg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    z-index: 20;
+    
+    transition: ease-in-out .8s;
+}
+
+
+.navpage {
+    top: -100vw;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgcolor);
+    background-image: url('./assets/image/tiraibg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    transition: all cubic-bezier(.91,0,.11,1) 1.8s;
+    z-index: 40;
+
+}
 
 body {
     background-color: var(--bgcolor);
+    width: 100vw;
+    overflow: hidden;
 }
+
 
 h1 {
     color: #CCAC92;
@@ -88,6 +142,10 @@ i {
     color: var(--listcolor);
 }
 
+.title {
+    font-family: "Stalemate", cursive;
+    font-weight: 400;
+}
 
 
 

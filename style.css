@@ -1,3 +1,21 @@
 section {
     height: 100vh;
 }
+
+.landingpage {
+    background-image: url('./assets/image/bglandingpage.png');
+    color: #FFEFDD;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 0px 0px 15px #ff990086;
+}
+
+.title {
+    position: relative;
+    left: calc(var(--progress) *10) px;
+}
+
+.bgeffect {
+    background: rgb(10,5,1);
+    background: linear-gradient(180deg, rgba(10,5,1,0) 0%, rgba(10,5,1,1) 89%, rgba(10,5,1,1) 100%);
+}
