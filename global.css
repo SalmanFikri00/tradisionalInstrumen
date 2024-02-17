@@ -46,6 +46,10 @@
     
 }
 
+.listcolor {
+    background-color: var(--listcolor);
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -85,53 +89,53 @@
 body {
     background-color: var(--bgcolor);
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
-h1 {
+.h1 {
     color: #CCAC92;
     font-size: 89.76px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h2 {
+.h2 {
     color: #CCAC92;
     font-size: 67.34px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h3 {
+.h3 {
     color: #CCAC92;
     font-size: 50.52px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h4{
+.h4{
     color: #CCAC92;
     font-size: 37.9px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h5 {
+.h5 {
     color: #CCAC92;
     font-size: 28.43px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h6 {
+.h6 {
     font-size: 21.33px;
     color: #CCAC92;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-p {
+.p {
     font-size: 16px;
     color: #CCAC92;
     font-family: "Poppins", sans-serif;
@@ -152,31 +156,31 @@ i {
 
 @media screen and ( max-width: 500px ) {
 
-    h1 {
+    .h1 {
         font-size: 35.83px;
     }
     
-    h2 {
+    .h2 {
         font-size: 29.86px;
     }
     
-    h3 {
+    .h3 {
         font-size: 24.88px;
     }
     
-    h4{
+    .h4{
         font-size: 20.74px;
     }
     
-    h5 {
+    .h5 {
         font-size: 17.28px;
     }
     
-    h6 {
+    .h6 {
         font-size: 14.4px;
     }
     
-    p {
+    .p {
         font-size: 12px;
     }
     

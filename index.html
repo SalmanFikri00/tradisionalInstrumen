@@ -13,20 +13,22 @@
 
     <div class="tirai flex flex-col justify-center p-12 font-light z-40">
         <div>
-            <p class="text-[40px]" data-aos="fade-right"  data-aos-easing="ease-out-cubic" data-aos-duration="700">Harta Karun Budaya:</p>
-            <h1 class="text-[120px] " data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1400">
+            <p class="text-[40px] p" data-aos="fade-right"  data-aos-easing="ease-out-cubic" data-aos-duration="700">Harta Karun Budaya:</p>
+            <h1 class="text-[120px] h1 " data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1400">
                 Tradisional Instrumen
             </h1>
         </div>
         <div class="w-full flex justify-center p-12">
-            <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="400" id="progress">sedang memuat</p>
+            <p class="p" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="400" id="progress">sedang memuat</p>
         </div>
     </div>
 
+
+    
     <div class="fixed navpage">
         <nav class=" flex w-full px-[104px] py-[30px] justify-between fixed z-20">
             <div>
-                <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
+                <h6 class="h6" onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
             </div>
             <div>
                 <i class="fa-solid fa-xmark" onclick="closeNavPage()" alt="" onmouseover="hoverBox()" onmouseout="resetBox()"></i>
@@ -43,7 +45,7 @@
 
     <nav class=" flex w-full px-[104px] py-[30px] justify-between fixed z-20">
         <div>
-            <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
+            <h6 onmouseover="hoverBox()" onmouseout="resetBox()" class="h6">Moesik</h6>
         </div>
         <div>
             <img src="./assets/image/menu.svg" onclick="openNavPage()" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
@@ -59,12 +61,12 @@
 
     <section class=" flex-col landingpage py-[15vh] px-[50px] flex justify-between relative" data-scroll-section="">
         <div class="">
-            <h1 data-scroll="" data-scroll-speed="-.2" class=" w-auto -mb-14 tracking-widest text-[128px] title pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Tradisional Instrumen</h1>
-            <p data-scroll="" data-scroll-speed="-.2" class=" px-12 pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Harta Karun Budaya</p>
+            <h1 data-scroll="" data-scroll-speed="-.2" class="h1 w-auto -mb-14 tracking-widest text-[128px] title pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Tradisional Instrumen</h1>
+            <p data-scroll="" data-scroll-speed="-.2" class=" px-12 pointer p" onmouseover="hoverBox()" onmouseout="resetBox()">Harta Karun Budaya</p>
         </div>
         <div class="h-[20vh] flex justify-end px-[6vw] pointer">
             <a href="#about" class="flex items-center flex-col" data-scroll="" data-scroll-speed=".5" onmouseover="hoverBox()" onmouseout="resetBox()">
-                <p>Scroll Down</p>
+                <p class="p">Scroll Down</p>
                 <img src="./assets/image/Arrow.svg" alt="">
             </a>
         </div>
@@ -74,12 +76,56 @@
 
 
 
-    <section id="about">
-        <p data-scroll="" data-scroll-speed=".5" onmouseover="hoverBox()" onmouseout="resetBox()">dced</p>
-        <p data-scroll="" data-scroll-speed=".2" onmouseover="hoverBox()" onmouseout="resetBox()">dced</p>
+    <section id="about" class="h-[70vh] w-full flex justify-center items-center">
+        <div class="w-3/5">
+            <div class="flex flex-col w-1/3 ">
+                <h1 class="h2 underline decoration-2 underline-offset-8">About It</h1>
+            </div>
+        <div class="w-full flex justify-center items-center">
+        <div class="flex justify-center h-32 items-center w-full my-8">
+                    <div class="w-[1px] h-full rounded-2xl ml-7 mr-14  listcolor"></div>
+                    <p class="p ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam corporis illum rerum placeat quidem suscipit facere dicta aliquid harum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo facere nam debitis dignissimos quisquam error iusto deserunt asperiores, modi voluptatum.
+                    </p>
+                    <div class=" h-full ml-14 mr-7 flex flex-col items-center ">
+                        <div class="w-[1px] rounded-2xl listcolor h-full "></div>
+                        <img src="./assets/image/music.svg" class="mt-5 w-12" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="listcolor h-[1px] w-full rounded-2xl"></div>
+        </div>
     </section>
 
+    <section class="h-[50vh] bg-[#1E1712] flex justify-center flex-col">
+        <div class="flex justify-center items-start">
+            <h2 class="h2">Play It</h2>
+            <img src="./assets/image/music.svg" class="w-7 rotate-12 m-7" alt="">
+        </div>
+        <div class="flex justify-center items-center flex-col">
+            <h6 class="h6 text-center -mb-4 mt-8">
+                Sedikit Alat musik Anda Bisa Coba Mainkan Di Sini
+            </h6>
+            <img src="./assets/image/border.png" class="w-2/5 " alt="">
+        </div>
+    </section>
 
+    <section class="flex justify-center items-center">
+        <div class="flex w-2/3">
+            <article class="flex flex-col justify-center items-start">
+                <h2 class="h2">
+                    Angklung
+                </h2>
+                <p class="p">
+                    Sebuah alat musik tadisional yang cukup terkenal di kalangan masyarakat
+                </p>
+                <button class="rounded-2xl p listcolor text-[#0A0501] px-14 py-3 my-5">
+                    Mainkan
+                </button>
+            </article>
+            <img src="./assets/image/angklung.svg" alt="">
+        </div>
+    </section>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
