@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tradisional Instrumen</title>
+    <link rel="stylesheet" href="sumatera.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="../../../global.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body data-scroll-container="">
+    <div class="tirai flex flex-col justify-center p-12 font-light z-40">
+      <div>
+        <p
+          class="text-[40px]"
+          data-aos="fade-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="700"
+        >
+          Harta Karun Budaya:
+        </p>
+        <h1
+          class="text-[120px]"
+          data-aos="fade-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1400"
+        >
+          Tradisional Instrumen
+        </h1>
+      </div>
+      <div class="w-full flex justify-center p-12">
+        <p
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="400"
+          id="progress"
+        >
+          sedang memuat
+        </p>
+      </div>
+    </div>
+
+    <div class="fixed navpage">
+      <nav class="flex w-full px-[104px] py-[30px] justify-between fixed z-20">
+        <div>
+          <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-xmark"
+            onclick="closeNavPage()"
+            alt=""
+            onmouseover="hoverBox()"
+            onmouseout="resetBox()"
+          ></i>
+        </div>
+        <div class="flex gap-2">
+          <img
+            src="../../../assets/image/users.svg"
+            alt=""
+            onmouseover="hoverBox()"
+            onmouseout="resetBox()"
+          />
+          <img
+            src="../../../assets/image/volume.svg"
+            alt=""
+            onmouseover="hoverBox()"
+            onmouseout="resetBox()"
+          />
+        </div>
+      </nav>
+    </div>
+
+    <nav class="flex w-full px-[104px] py-[30px] justify-between fixed z-20">
+      <div>
+        <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
+      </div>
+      <div>
+        <img
+          src="../../../assets/image/menu.svg"
+          onclick="openNavPage()"
+          alt=""
+          onmouseover="hoverBox()"
+          onmouseout="resetBox()"
+        />
+      </div>
+      <div class="flex gap-2">
+        <img
+          src="../../../assets/image/users.svg"
+          alt=""
+          onmouseover="hoverBox()"
+          onmouseout="resetBox()"
+        />
+        <img
+          src="../../../assets/image/volume.svg"
+          alt=""
+          onmouseover="hoverBox()"
+          onmouseout="resetBox()"
+        />
+      </div>
+    </nav>
+    <div
+      class="h-[20vh] w-full bottom-0 flex justify-start px-[6vw] pointer fixed z-10"
+    >
+      <a
+        href="../index.html"
+        class="flex items-center"
+        onmouseover="hoverBox()"
+        onmouseout="resetBox()"
+      >
+        <!-- <img src="img-island/Arrow 2.svg" /> -->
+        <p>Show Others</p>
+      </a>
+    </div>
+
+    <section
+      class="py-[15vh] px-[50px] flex justify-center items-center"
+      data-scroll-section=""
+    >
+      <div class="pt-8">
+        <img src="img-island/Rectangle 16.png" alt="" />
+      </div>
+    </section>
+
+    <section id="about" class="h-full">
+      <div class="flex flex-col items-center">
+        <img class="border-img" src="img-island/border 1.png" alt="" />
+        <div class="w-[80%] md:w-[60%] py-8">
+          <p class="text-[18px] md:text-[30px] text-center text-white">
+            Di Pulau Sumatera kita akan menemukan alat-alat musik yang
+            memancarkan keajaiban budaya dan kreativitas. Dari hutan belantara
+            hingga pedalaman desa, alat-alat musik ini membawa kesan mistis dan
+            meriahkan setiap perayaan
+          </p>
+          <p class="text-[18px] md:text-[30px] pt-8 text-center text-white">
+            Di Pulau Sumatera kita akan menemukan alat-alat musik yang
+            memancarkan keajaiban budaya dan kreativitas. Dari hutan belantara
+            hingga pedalaman desa, alat-alat musik ini membawa kesan mistis dan
+            meriahkan setiap perayaan
+          </p>
+        </div>
+        <img class="border-img" src="img-island/border 1.png" alt="" />
+      </div>
+    </section>
+
+    <section
+      id="list-instrument"
+      class="flex flex-col items-center justify-around h-full pt-[50px] md:pt-[80px]"
+    >
+      <div class="w-[80%] responsive-list relative">
+        <div class="absolute md:left-0 flex justify-center">
+          <img
+            class="responsive-list-img"
+            src="img-island/Rectangle 15.png"
+            alt=""
+          />
+          <div class="absolute pt-2 md:pt-8 pr-[30%] sm:pr-[35%]">
+            <h1 class="md:text-[30px] text-white">Tambo</h1>
+            <p class="text-[15px] md:text-[20px] text-white">Aceh</p>
+          </div>
+          <img
+            class="absolute left-0 h-[100%]"
+            src="img-island/sumatera/download 1.png"
+            alt=""
+          />
+          <!-- audio -->
+          <div class="mediPlayer">
+            <audio
+              class="listen"
+              preload="none"
+              data-size="250"
+              src="img-island/sumatera/audio/1.mp3"
+            ></audio>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+      <div class="w-[80%] responsive-list relative">
+        <div class="absolute md:right-0 flex justify-center">
+          <img
+            class="responsive-list-img"
+            src="img-island/Rectangle 15.png"
+            alt=""
+          />
+          <div class="absolute pt-2 md:pt-8 pr-[30%] sm:pr-[35%]">
+            <h1 class="md:text-[30px] text-white">Tambo</h1>
+            <p class="text-[15px] md:text-[20px] text-white">Aceh</p>
+          </div>
+          <img
+            class="absolute left-0 h-[100%]"
+            src="img-island/sumatera/download 2.png"
+            alt=""
+          />
+          <div class="mediPlayer">
+            <audio
+              class="listen"
+              preload="none"
+              data-size="250"
+              src="img-island/sumatera/audio/1.mp3"
+            ></audio>
+          </div>
+        </div>
+      </div>
+      <div class="w-[80%] responsive-list relative">
+        <div class="absolute md:left-0 flex justify-center">
+          <img
+            class="responsive-list-img"
+            src="img-island/Rectangle 15.png"
+            alt=""
+          />
+          <div class="absolute pt-2 md:pt-8 pr-[30%] sm:pr-[35%]">
+            <h1 class="md:text-[30px] text-white">Tambo</h1>
+            <p class="text-[15px] md:text-[20px] text-white">Aceh</p>
+          </div>
+          <img
+            class="absolute left-0 h-[100%]"
+            src="img-island/sumatera/yk1epiez8ryz0gyv2sll 1.png"
+            alt=""
+          />
+          <div class="mediPlayer">
+            <audio
+              class="listen"
+              preload="none"
+              data-size="250"
+              src="img-island/sumatera/audio/1.mp3"
+            ></audio>
+          </div>
+        </div>
+      </div>
+      <div class="w-[80%] responsive-list relative">
+        <div class="absolute md:right-0 flex justify-center">
+          <img
+            class="responsive-list-img"
+            src="img-island/Rectangle 15.png"
+            alt=""
+          />
+          <div class="absolute pt-2 md:pt-8 pr-[30%] sm:pr-[35%]">
+            <h1 class="md:text-[30px] text-white">Tambo</h1>
+            <p class="text-[15px] md:text-[20px] text-white">Aceh</p>
+          </div>
+          <img
+            class="absolute left-0 h-[100%]"
+            src="img-island/sumatera/download 1.png"
+            alt=""
+          />
+          <div class="mediPlayer">
+            <audio
+              class="listen"
+              preload="none"
+              data-size="250"
+              src="img-island/sumatera/audio/1.mp3"
+            ></audio>
+          </div>
+        </div>
+      </div>
+      <div class="w-[80%] responsive-list relative">
+        <div class="absolute md:left-0 flex justify-center">
+          <img
+            class="responsive-list-img"
+            src="img-island/Rectangle 15.png"
+            alt=""
+          />
+          <div class="absolute pt-2 md:pt-8 pr-[30%] sm:pr-[35%]">
+            <h1 class="md:text-[30px] text-white">Tambo</h1>
+            <p class="text-[15px] md:text-[20px] text-white">Aceh</p>
+          </div>
+          <img
+            class="absolute left-0 h-[100%]"
+            src="img-island/sumatera/download 1.png"
+            alt=""
+          />
+          <div class="mediPlayer">
+            <audio
+              class="listen"
+              preload="none"
+              data-size="250"
+              src="img-island/sumatera/audio/1.mp3"
+            ></audio>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9740886e95.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="global.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>
