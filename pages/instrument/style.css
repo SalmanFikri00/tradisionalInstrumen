@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Stalemate&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    overflow: hidden;
+    background-color: #1D1111;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+.title{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center; 
+    text-align: center;
+}
+.title h1{
+    cursor: pointer;
+    margin-top: 70px;
+    font-size: 70px;
+    color: #F3cb51;
+    font-weight: 400;
+    font-family: "Stalemate", cursive;
+}
+.row > * {
+    transition: opacity 0.5s ease; /* Apply transition effect to all children of .container */
+}
+.row{
+    height: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.auto-play{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    
+}
+.image{
+    height: 200px; 
+    transition: opacity 0.5s ease;    
+    
+}
+video {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 100%; /* Make the video fill the container */
+    height: 100%; /* Make the video fill the container */
+    object-fit: cover; /* Ensure the video covers the entire container */    
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'poppins';
+    font-weight: 400;
+    color: white;
+}
+
+.show-up{
+    font-size: 15px;
+    color: #F3cb51;
+    border-bottom:  white solid 1px;
+    transform: translateY(50px);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;;
+}
+
+.show-up::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    border-bottom: white solid 1px;
+}
+.show-up::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    border-bottom: white solid 1px;
+}
+@media only screen and (max-width: 1024px) {
+    .image{
+        height: 170px; 
+        /* object-fit: contain;   */
+    }
+}
+@media only screen and (max-width: 768px) {
+    body{
+        overflow:scroll;
+    }
+    .container{
+        height: 100%;
+    }
+    .title{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center; 
+        text-align: center;
+    }
+    .row{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .object{
+        padding: 30px;
+    }
+    .image{
+        height: 220px;   
+    }
+}
+@media only screen and (max-width: 600px){
+    .image{
+        height: 170px;
+        object-fit: contain;
+        /* width: 80%; */
+    }
+    .object{
+        padding-top: 50px;
+        padding: 30px;
+    }
+}
