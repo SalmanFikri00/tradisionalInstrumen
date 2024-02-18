@@ -71,11 +71,11 @@ const boxJs = document.createElement("div");
       document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
           progress.textContent = "sebentar lagi";
-        }, 0); //1000
+        }, 1000); //1000
         setTimeout(() => {
           progress.textContent = "selamat menikmati";
-        }, 0); //2000
+        }, 2000); //2000
         setTimeout(() => {
           bukaTirai();
-        }, 0); //3000
+        }, 3000); //3000
       });
