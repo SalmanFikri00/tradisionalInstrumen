@@ -1,6 +1,6 @@
 const boxJs = document.createElement("div");
       const navpage = document.querySelector(".navpage");
-      const title = document.querySelector(".title");
+      // const title = document.querySelector(".title");
       const progress = document.getElementById("progress");
       boxJs.id = "box";
       boxJs.className = "b1";
@@ -59,9 +59,9 @@ const boxJs = document.createElement("div");
         }, 20);
       });
 
-      window.addEventListener("scroll", (event) => {
-        title.style.left = window.scrollY + "px";
-      });
+      // window.addEventListener("scroll", (event) => {
+      //   title.style.left = window.scrollY + "px";
+      // });
 
       const bukaTirai = () => {
         tirai.style.top = 0 - window.innerHeight + "px";

@@ -1,6 +1,8 @@
-
+body{
+    overflow-x: hidden;
+    position: relative;
+}
 .border-img{
-    /* height: 80px; */
     object-fit: contain;
     width: 50%;
 }
@@ -17,7 +19,7 @@
 .mediPlayer{
     position: absolute;
     bottom: 0;
-    right: 0    ;
+    right: 0;
     padding-bottom: 10px;
     transform: translateX(-60px);
 }
@@ -80,11 +82,22 @@
     .responsive-list{
         height: 140px;
     }
+    .mediPlayer{
+        position: absolute;
+        bottom:auto;
+        right: 0;
+        padding-bottom: 0px;
+        transform: translateX(-60px);
+    }
+    .mid{
+        align-items: center;
+    }
 
 }
 @media screen and ( max-width: 420px ) {
     .responsive-list{
         height: 110px;
     }
+
 
 }
