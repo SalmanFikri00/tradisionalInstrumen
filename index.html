@@ -38,12 +38,18 @@
                 <img src="./assets/image/volume.svg" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
             </div>
         </nav>
+        <div class="w-screen h-screen fixed flex flex-col gap-8 justify-center items-start px-24 ">
+            <a class="h3 text-shadow pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Home</a>
+            <a class="h3 text-shadow pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Instrumental</a>
+            <a class="h3 text-shadow pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Play It</a>
+            
+        </div>
     </div>
 
 
 
 
-    <nav class=" flex w-screen md:px-[104px] px-[50px] py-[30px] justify-between fixed z-20">
+    <nav class="n flex w-screen md:px-[104px] px-[50px] py-[30px] items-center justify-between fixed z-20">
         <div>
             <h6 onmouseover="hoverBox()" onmouseout="resetBox()" class="h6">Moesik</h6>
         </div>
@@ -119,9 +125,9 @@
                 <p class="p">
                     Sebuah alat musik tadisional yang cukup terkenal di kalangan masyarakat
                 </p>
-                <button class=" shadow-2xl shadow-inner rounded-2xl p listcolor text-[#0A0501] px-14 py-3 my-5 hover:sha">
+                <a href="/pages/playit/angklung.html" onmouseover="hoverBox()" onmouseout="resetBox()" class=" shadow-2xl shadow-inner rounded-2xl listcolor text-[#0A0501] px-14 py-3 my-5 hover:sha">
                     Mainkan
-                </button>
+                </a>
             </article>
             <img src="./assets/image/angklung.svg" class="w-1/2" alt="">
         </div>
@@ -191,6 +197,7 @@ if(window.innerWidth > 1000){
 }
 const box = document.getElementById('box')
 const tirai = document.querySelector('.tirai')
+const nav = document.querySelector('.n')
 
 AOS.init();
 
@@ -256,9 +263,14 @@ AOS.init();
         }, 20);
     });
 
-    // window.addEventListener('scroll', (event) => {
-    //     title.style.left = window.scrollY + 'px';
-    // })
+    window.addEventListener('scroll', (event) => {
+        // title.style.left = window.scrollY + 'px';
+        if( window.scrollY > 200 ) {
+            nav.classList.add('nav');
+        }else {
+            nav.classList.remove('nav');
+        }
+    })
 
 
 

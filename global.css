@@ -50,6 +50,16 @@
     background-color: var(--listcolor);
 }
 
+.nav {
+    backdrop-filter: blur(3px);
+    background-color:#0a05016e ;
+    box-shadow: 0px 0px 50px 20px rgba(255, 255, 255, 0.118);
+}
+
+.n {
+    transition: all ease-in-out 0.5s;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -69,14 +79,18 @@
     transition: ease-in-out .8s;
 }
 
+.text-shadow {
+    text-shadow: 0px 0px 15px #ff990086;
+}
+
 
 .navpage {
     top: -100vh;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: var(--bgcolor);
-    background-image: url('./assets/image/tiraibg.png');
+    filter: contrast(110%) brightness(80%);
+    background-image: url('./assets/image/bgnavpage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
