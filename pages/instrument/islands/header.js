@@ -28,13 +28,23 @@ const boxJs = document.createElement("div");
         },
       });
 
+      window.addEventListener('scroll', (event) => {
+        // title.style.left = window.scrollY + 'px';
+        if( window.scrollY > 200 ) {
+            nav.classList.add('nav');
+        }else {
+            nav.classList.remove('nav');
+        }
+    })
+
+
       const openNavPage = () => {
         navpage.style.top = "0px";
         locomotiveScroll.stop();
       };
 
       const closeNavPage = () => {
-        navpage.style.top = 0 - window.innerHeight + "px";
+        navpage.style.top = "-100vh";
         locomotiveScroll.start();
       };
 
@@ -64,7 +74,7 @@ const boxJs = document.createElement("div");
       // });
 
       const bukaTirai = () => {
-        tirai.style.top = 0 - window.innerHeight + "px";
+        tirai.style.top = "-100vh";
         locomotiveScroll.start();
       };
 

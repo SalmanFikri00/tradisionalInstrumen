@@ -2,31 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no">
     <title>Tradisional Instrumen</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body data-scroll-container="">
+<body id="home" data-scroll-container="" class="h-screen max-h-screen w-screen  ">
 
-    <div class="tirai flex flex-col justify-center p-12 font-light z-40">
+    <div class="tirai flex flex-col justify-center p-12 font-light z-60">
         <div>
-            <p class="text-[40px]" data-aos="fade-right"  data-aos-easing="ease-out-cubic" data-aos-duration="700">Harta Karun Budaya:</p>
-            <h1 class="text-[120px] " data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1400">
+            <p class="text-xl md:text-[40px] p" data-aos="fade-right"  data-aos-easing="ease-out-cubic" data-aos-duration="700">Harta Karun Budaya:</p>
+            <h1 class="text-5xl md:text-[120px] h1 " data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1400">
                 Tradisional Instrumen
             </h1>
         </div>
         <div class="w-full flex justify-center p-12">
-            <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="400" id="progress">sedang memuat</p>
+            <p class="p" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="400" id="progress">sedang memuat</p>
         </div>
     </div>
 
+
+    
     <div class="fixed navpage">
-        <nav class=" flex w-full px-[104px] py-[30px] justify-between fixed z-20">
+        <nav class=" flex w-screen px-[104px] py-[30px] justify-between fixed z-20">
             <div>
-                <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
+                <h6 class="h6" onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
             </div>
             <div>
                 <i class="fa-solid fa-xmark" onclick="closeNavPage()" alt="" onmouseover="hoverBox()" onmouseout="resetBox()"></i>
@@ -36,37 +38,44 @@
                 <img src="./assets/image/volume.svg" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
             </div>
         </nav>
+        <div class="w-screen h-screen fixed flex flex-col gap-8 justify-center items-start px-24 ">
+            <a href="/index.html" class="h3 text-shadow pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Home</a>
+            <a href="/pages/instrument/index.html" class="h3 text-shadow pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Instrumental</a>
+            <a href="/index.html" class="h3 text-shadow pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Play It</a>
+            
+        </div>
     </div>
 
 
 
 
-    <nav class=" flex w-full px-[104px] py-[30px] justify-between fixed z-20">
+    <nav class="n flex w-screen md:px-[104px] px-[50px] py-[30px] items-center justify-between fixed z-20">
         <div>
-            <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
+            <h6 onmouseover="hoverBox()" onmouseout="resetBox()" class="h6">Moesik</h6>
         </div>
         <div>
             <img src="./assets/image/menu.svg" onclick="openNavPage()" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
         </div>
         <div class="flex gap-2">
-            <img src="./assets/image/users.svg" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
-            <img src="./assets/image/volume.svg" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
+            <img src="./assets/image/users.svg" id="tim" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
+            <div class="relative flex justify-center items-center" id="wrapperSound">
+                <div class="absolute h-1 rounded-2xl rotate-45 listcolor " id="soundOff"></div>
+                <img src="./assets/image/volume.svg" id="bs" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
+            </div>
         </div>
     </nav>
 
 
-
-
     <section class=" flex-col landingpage py-[15vh] px-[50px] flex justify-between relative" data-scroll-section="">
         <div class="">
-            <h1 data-scroll="" data-scroll-speed="-.2" class=" w-auto -mb-14 tracking-widest text-[128px] title pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Tradisional Instrumen</h1>
-            <p data-scroll="" data-scroll-speed="-.2" class=" px-12 pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Harta Karun Budaya</p>
+            <h1 data-scroll="" data-scroll-speed="-.2" class="h1 w-auto md:-mb-14 tracking-widest md:text-[128px] titlee pointer text-[48px] " onmouseover="hoverBox()" onmouseout="resetBox()">Tradisional Instrumen</h1>
+            <p data-scroll="" data-scroll-speed="-.2" class=" px-12 pointer p" onmouseover="hoverBox()" onmouseout="resetBox()">Harta Karun Budaya</p>
         </div>
         <div class="h-[20vh] flex justify-end px-[6vw] pointer">
-            <a href="#about" class="flex items-center flex-col" data-scroll="" data-scroll-speed=".5" onmouseover="hoverBox()" onmouseout="resetBox()">
-                <p>Scroll Down</p>
+            <div class="flex items-center flex-col justify-center" data-scroll="" data-scroll-speed=".5" onmouseover="hoverBox()" onmouseout="resetBox()">
+                <p id="playit" class="p">Play It</p>
                 <img src="./assets/image/Arrow.svg" alt="">
-            </a>
+            </div>
         </div>
 
         <div class="absolute bottom-0 bgeffect z-10 w-full h-[20vh] "></div>
@@ -74,123 +83,153 @@
 
 
 
-    <section id="about">
-        <p data-scroll="" data-scroll-speed=".5" onmouseover="hoverBox()" onmouseout="resetBox()">dced</p>
-        <p data-scroll="" data-scroll-speed=".2" onmouseover="hoverBox()" onmouseout="resetBox()">dced</p>
+    <section id="about" class="h-[70vh] w-full flex justify-center items-center">
+        <div class="lg:w-3/5 w-4/5">
+            <div class="flex flex-col w-2/3 ">
+                <h1 class="h2 underline decoration-2 underline-offset-8">About It</h1>
+            </div>
+            <div class="w-full flex justify-center items-center">
+                <div class="flex justify-center h-32 items-center w-full my-8">
+                    <div class="w-[1px] h-full rounded-2xl ml-2 mr-4  listcolor"></div>
+                    <p class="p ">
+                        Selamat datang di website tradisional Instrumen, tempat di mana tradisi bertemu dengan teknologi. Kami menghadirkan keindahan alat musik tradisional dari berbagai budaya langsung ke layar perangkat Anda. Jelajahi, belajar, dan mainkan melodi yang memikat dari seluruh dunia dengan tradisional Instrumen.
+                    </p>
+                    <div class=" h-full ml-4 mr-2 flex flex-col items-center ">
+                        <div class="w-[1px] rounded-2xl listcolor h-full "></div>
+                        <img src="./assets/image/music.svg" class="mt-5 w-16" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="listcolor h-[1px] w-full rounded-2xl"></div>
+        </div>
+    </section>
+
+    <section id="playitsection" class="md:h-[50vh] h-[20vh] bg-[#1E1712] flex justify-center flex-col">
+        <div class="flex justify-center items-start">
+            <h2 class="h2">Play It</h2>
+            <img src="./assets/image/music.svg" class="w-7 rotate-12 md:m-7 m-2" alt="">
+        </div>
+        <div class="flex justify-center items-center flex-col">
+            <h6 class="h6 text-center -mb-4 md:mt-8 mt-2">
+                Sedikit Alat musik Anda Bisa Coba Mainkan Di Sini
+            </h6>
+            <img src="./assets/image/border.png" class="w-2/5 " alt="">
+        </div>
+    </section>
+
+    <section class="flex justify-center items-center">
+        <div class="flex-col-reverse justify-center items-center flex w-2/3 md:flex-row">
+            <article class="flex flex-col justify-center items-start">
+                <h2 class="h2">
+                    Angklung
+                </h2>
+                <p class="p">
+                    Sebuah alat musik tadisional yang cukup terkenal di kalangan masyarakat
+                </p>
+                <a href="/pages/playit/angklung.html" onmouseover="hoverBox()" onmouseout="resetBox()" class=" shadow-2xl shadow-inner rounded-2xl listcolor text-[#0A0501] px-14 py-3 my-5 hover:sha">
+                    Mainkan
+                </a>
+            </article>
+            <img src="./assets/image/angklung.svg" class="w-1/2" alt="">
+        </div>
     </section>
 
 
+    <section class="flex justify-center items-center">
+        <div class="flex-col-reverse justify-center items-center flex w-2/3 md:flex-row-reverse">
+            <article class="flex flex-col justify-center items-start">
+                <h2 class="h2">
+                    Serdam
+                </h2>
+                <p class="p">
+                    Sebuah alat musik tadisional yang cukup terkenal di kalangan masyarakat
+                </p>
+                <a href="/pages/playit/serdam.html" onmouseover="hoverBox()" onmouseout="resetBox()" class=" shadow-2xl shadow-inner rounded-2xl listcolor text-[#0A0501] px-14 py-3 my-5 hover:sha">
+                    Mainkan
+                </a>
+            </article>
+            <img src="./assets/image/serdam.png" class="w-1/2" alt="">
+        </div>
+    </section>
+
+
+
+    <footer class="bg-[#1E1712] lg:h-[50vh] h-[30vh]" id="footer">
+        <div class="lg:flex w-screen h-5/6">
+
+            <div class="lg:w-1/3 h-1/4 flex items-center">
+                <h1 class="h4 m-5 underline decoration-2 underline-offset-6">
+                Tradisional Instrumen
+            </h1>
+        </div>
+        <article class=" lg:w-2/3 flex justify-evenly items-center h-3/4 lg:h-full">
+            <div>
+                <h6 class="h6">source</h6>
+                <ul class="lg:p-6 p-2">
+                    <li class="p">youtube</li>
+                    <li class="p">website blog</li>
+                    <li class="p">website berita</li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="h6">Tim</h6>
+                <ul class="lg:p-6 p-2">
+                    <li class="p">Salman</li>
+                    <li class="p">Dani</li>
+                    <li class="p">Nazwa</li>
+                    <li class="p">Salsa</li>
+                    <li class="p">Aulia</li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="h6">Jobdesk</h6>
+                <ul class="lg:p-6 p-2">
+                    <li class="p">Web Developer , UI/UX</li>
+                    <li class="p">Web Developer</li>
+                    <li class="p">Pencari Informasi</li>
+                    <li class="p">Pencari Informasi , UI/UX</li>
+                    <li class="p">Pencari Informasi , UI/UX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-screen flex justify-center h-1/6 items-end p-3">
+            <h6 class="h6">copyright© 2024. Tradisional Instrumen</h6>
+        </div>
+        </article>
+
+        
+    </footer>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/9740886e95.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="./global.js"></script>
     <script>
+        const soundOff = document.querySelector('#soundOff')
+        const wrapperSound = document.querySelector('#wrapperSound')
+        const backsound = new Audio('./assets/sound/backsound/backsound.mp3')
+        var backsoundStatus = "play"
+        wrapperSound.addEventListener('click' , ( ) => {
+            if(backsoundStatus == 'stop' ){
+                backsound.play()
+                backsoundStatus = 'play'
+                soundOff.classList.remove('w-8')
+            }else {
+                backsound.pause()
+                backsoundStatus = 'stop'
+                soundOff.classList.add('w-8')
+            }
+        })
 
-
-const boxJs = document.createElement('div')
-const navpage = document.querySelector('.navpage')
-const title = document.querySelector('.title')
-const progress = document.getElementById("progress")
-boxJs.id = 'box'
-boxJs.className = 'b1'
-document.body.appendChild(boxJs)
-const box = document.getElementById('box')
-const tirai = document.querySelector('.tirai')
-
-AOS.init();
-
-
-
-        const locomotiveScroll = new LocomotiveScroll({
-            autoStart: false,
-            lenisOptions: {
-                wrapper: window,
-                content: document.documentElement,
-                lerp: 0.2,
-                duration: 2.5,
-                orientation: 'vertical',
-                gestureOrientation: 'vertical',
-                smoothWheel: true,
-                smoothTouch: true,
-                wheelMultiplier: 1,
-                touchMultiplier: 1,
-                normalizeWheel: true,
-                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-            },
-        });
+        document.addEventListener('DOMContentLoaded', () => {
+            backsound.play()
+        })
 
 
 
 
-    const openNavPage = () => {
-        
-        navpage.style.top = '0px'
-        locomotiveScroll.stop()
-    }
-
-
-    const closeNavPage = () => {
-        navpage.style.top = (0-window.innerHeight)+'px'
-        locomotiveScroll.start()
-
-    }
-
-    const hoverBox = () => {
-    
-        box.style.transform = 'translate( -50% , -50% ) scale(1.7)';
-        box.style.opacity = '.5';
-        box.style.borderRadius = '50%'
-    }
-
-    const resetBox = () => {
-        box.style.transform = 'translate( -50% , -50% ) scale(1.2)';
-        box.style.opacity = '1';
-        box.style.borderRadius = '50%'
-        
-        
-    }
-    
-    
-    
-    document.addEventListener('mousemove', function(event) {
-        setTimeout(() => {
-            let x = event.clientX;
-            let y = event.clientY;
-            box.style.left = x + 'px';
-            box.style.top = y + 'px';
-        }, 20);
-    });
-
-    window.addEventListener('scroll', (event) => {
-        title.style.left = window.scrollY + 'px';
-    })
-
-
-
-
-    const bukaTirai = () => {
-        tirai.style.top = (0-window.innerHeight)+'px'
-        locomotiveScroll.start()
-
-    }
-
-
-
-
-    document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => {
-            progress.textContent ='sebentar lagi'
-        }, 1000);
-        setTimeout(() => {
-            progress.textContent ='selamat menikmati'
-        }, 2000);        
-        setTimeout(() => {
-            bukaTirai()
-        }, 3000);
-    })
-
-</script>
+    </script>
 </body>
 </html>

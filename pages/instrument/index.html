@@ -2,11 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no">
     <title>Tradisional Instrumen</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../global.css">
   </head>
   <body>
+
+    <div class="tirai flex flex-col justify-center p-12 font-light z-80">
+      <div>
+          <p class="text-xl md:text-[40px] p" data-aos="fade-right"  data-aos-easing="ease-out-cubic" data-aos-duration="700">Harta Karun Budaya:</p>
+          <h1 class="text-5xl md:text-[120px] h1 " data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1400">
+              Tradisional Instrumen
+          </h1>
+      </div>
+      <div class="w-full flex justify-center p-12">
+          <p class="p" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="400" id="progress">sedang memuat</p>
+      </div>
+  </div>
+
+  <div id="tim" style="display: none;"></div>
+  <div id="footer" style="display: none;"></div>
+
     <div class="container">
       <div class="title">
         <h1>Choose One</h1>
@@ -76,6 +93,11 @@
         </a>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/9740886e95.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="../../global.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

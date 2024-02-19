@@ -46,11 +46,28 @@
     
 }
 
+.listcolor {
+    background-color: var(--listcolor);
+}
+
+.nav {
+    backdrop-filter: blur(3px);
+    background-color:#0a05016e ;
+    box-shadow: 0px 0px 50px 20px rgba(255, 255, 255, 0.118);
+}
+
+.n {
+    transition: all ease-in-out 0.5s;
+    top: 0;
+   
+}
+
 .pointer {
     cursor: pointer;
 }
 
 .tirai {
+    z-index: 50;
     top: 0;
     position: fixed;
     width: 100vw;
@@ -60,9 +77,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
-    z-index: 20;
     
     transition: ease-in-out .8s;
+}
+
+.text-shadow {
+    text-shadow: 0px 0px 15px #ff990086;
 }
 
 
@@ -71,12 +91,11 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: var(--bgcolor);
-    /* background-image: url('./assets/image/tiraibg.png'); */
+    filter: contrast(110%) brightness(80%);
+    background-image: url('./assets/image/bgnavpage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 20;
     transition: all cubic-bezier(.91,0,.11,1) 1.8s;
     z-index: 40;
 
@@ -85,99 +104,104 @@
 body {
     background-color: var(--bgcolor);
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 
-h1 {
+.h1 {
     color: #CCAC92;
     font-size: 89.76px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h2 {
+.h2 {
     color: #CCAC92;
     font-size: 67.34px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h3 {
+.h3 {
     color: #CCAC92;
     font-size: 50.52px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h4{
+.h4{
     color: #CCAC92;
     font-size: 37.9px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h5 {
+.h5 {
     color: #CCAC92;
     font-size: 28.43px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-h6 {
+.h6 {
     font-size: 21.33px;
     color: #CCAC92;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
-p {
+.p {
     font-size: 16px;
     color: #CCAC92;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
+.ipopup {
+    
+    color: var(--bgcolor);
+}
 i {
     color: var(--listcolor);
 }
 
-.title {
+
+
+.titlee {
     font-family: "Stalemate", cursive;
     font-weight: 400;
 }
 
 
-
-
 @media screen and ( max-width: 500px ) {
 
-    h1 {
+    .h1 {
         font-size: 35.83px;
     }
     
-    h2 {
+    .h2 {
         font-size: 29.86px;
     }
     
-    h3 {
+    .h3 {
         font-size: 24.88px;
     }
     
-    h4{
+    .h4{
         font-size: 20.74px;
     }
     
-    h5 {
+    .h5 {
         font-size: 17.28px;
     }
     
-    h6 {
+    .h6 {
         font-size: 14.4px;
     }
     
-    p {
-        font-size: 12px;
+    .p {
+        font-size: 8px;
     }
     
 }

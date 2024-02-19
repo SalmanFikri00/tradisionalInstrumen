@@ -10,12 +10,17 @@ section {
     text-shadow: 0px 0px 15px #ff990086;
 }
 
-.title {
-    position: relative;
-    left: calc(var(--progress) *10) px;
+.titlee {
+    font-family: "Stalemate", cursive;
+    font-weight: 400;
 }
+
 
 .bgeffect {
     background: rgb(10,5,1);
     background: linear-gradient(180deg, rgba(10,5,1,0) 0%, rgba(10,5,1,1) 89%, rgba(10,5,1,1) 100%);
+}
+
+#soundOff {
+    transition: all cubic-bezier(.91,0,.11,1) 1.8s;
 }

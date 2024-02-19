@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no">
     <title>Tradisional Instrumen</title>
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="../../../global.css" />
@@ -13,96 +13,50 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body data-scroll-container="">
-    <div class="tirai flex flex-col justify-center p-12 font-light z-40">
+    <div class="tirai flex flex-col justify-center p-12 font-light z-60">
       <div>
-        <p
-          class="text-[40px]"
-          data-aos="fade-right"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="700"
-        >
-          Harta Karun Budaya:
-        </p>
-        <h1
-          class="text-[120px]"
-          data-aos="fade-right"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1400"
-        >
-          Tradisional Instrumen
-        </h1>
+          <p class="text-xl md:text-[40px] p" data-aos="fade-right"  data-aos-easing="ease-out-cubic" data-aos-duration="700">Harta Karun Budaya:</p>
+          <h1 class="text-5xl md:text-[120px] h1 " data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1400">
+              Tradisional Instrumen
+          </h1>
       </div>
       <div class="w-full flex justify-center p-12">
-        <p
-          data-aos="fade-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="400"
-          id="progress"
-        >
-          sedang memuat
-        </p>
+          <p class="p" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="400" id="progress">sedang memuat</p>
       </div>
-    </div>
+  </div>
+  
 
     <div class="fixed navpage">
-      <nav class="flex w-full px-[104px] py-[30px] justify-between fixed z-20">
-        <div>
-          <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
-        </div>
-        <div>
-          <i
-            class="fa-solid fa-xmark"
-            onclick="closeNavPage()"
-            alt=""
-            onmouseover="hoverBox()"
-            onmouseout="resetBox()"
-          ></i>
-        </div>
-        <div class="flex gap-2">
-          <img
-            src="../../../assets/image/users.svg"
-            alt=""
-            onmouseover="hoverBox()"
-            onmouseout="resetBox()"
-          />
-          <img
-            src="../../../assets/image/volume.svg"
-            alt=""
-            onmouseover="hoverBox()"
-            onmouseout="resetBox()"
-          />
+      <nav class=" flex w-screen px-[104px] py-[30px] justify-between fixed z-20">
+          <div>
+              <h6 class="h6" onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
+          </div>
+          <div>
+              <i class="fa-solid fa-xmark" onclick="closeNavPage()" alt="" onmouseover="hoverBox()" onmouseout="resetBox()"></i>
+          </div>
+          <div class="flex gap-2">
+            <img src="../../../assets/image/users.svg" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
         </div>
       </nav>
-    </div>
+      <div class="w-screen h-screen fixed flex flex-col gap-8 justify-center items-start px-24 ">
+          <a href="/index.html" class="h3 text-shadow pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Home</a>
+          <a href="/pages/instrument/index.html" class="h3 text-shadow pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Instrumental</a>
+          <a class="h3 text-shadow pointer" onmouseover="hoverBox()" onmouseout="resetBox()">Play It</a>
+      </div>
+  </div>
 
-    <nav class="flex w-full px-[104px] py-[30px] justify-between fixed z-20">
-      <div>
-        <h6 onmouseover="hoverBox()" onmouseout="resetBox()">Moesik</h6>
-      </div>
-      <div>
-        <img
-          src="../../../assets/image/menu.svg"
-          onclick="openNavPage()"
-          alt=""
-          onmouseover="hoverBox()"
-          onmouseout="resetBox()"
-        />
-      </div>
-      <div class="flex gap-2">
-        <img
-          src="../../../assets/image/users.svg"
-          alt=""
-          onmouseover="hoverBox()"
-          onmouseout="resetBox()"
-        />
-        <img
-          src="../../../assets/image/volume.svg"
-          alt=""
-          onmouseover="hoverBox()"
-          onmouseout="resetBox()"
-        />
-      </div>
-    </nav>
+  <nav class="n flex w-screen md:px-[104px] px-[50px] py-[30px] items-center justify-between fixed z-20">
+    <div>
+        <h6 onmouseover="hoverBox()" onmouseout="resetBox()" class="h6">Moesik</h6>
+    </div>
+    <div>
+        <img src="../../../assets/image/menu.svg" onclick="openNavPage()" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
+    </div>
+    <div class="flex gap-2">
+        <img src="../../../assets/image/users.svg" id="tim" alt="" onmouseover="hoverBox()" onmouseout="resetBox()">
+    </div>
+</nav>
+
     <div
       class="h-[20vh] bottom-0 flex justify-start px-[6vw] pointer fixed z-10"
     >
@@ -131,16 +85,10 @@
         <img class="border-img" src="img-island/border 1.png" alt="" />
         <div class="w-[80%] md:w-[60%] py-8">
           <p class="text-[18px] md:text-[30px] text-center text-white">
-            Di Pulau Sumatera kita akan menemukan alat-alat musik yang
-            memancarkan keajaiban budaya dan kreativitas. Dari hutan belantara
-            hingga pedalaman desa, alat-alat musik ini membawa kesan mistis dan
-            meriahkan setiap perayaan
+            Di Kalimantan, Anda akan menemukan alat-alat musik yang mencerminkan kekayaan budaya dan kehidupan masyarakat yang beragam.
           </p>
           <p class="text-[18px] md:text-[30px] pt-8 text-center text-white">
-            Di Pulau Sumatera kita akan menemukan alat-alat musik yang
-            memancarkan keajaiban budaya dan kreativitas. Dari hutan belantara
-            hingga pedalaman desa, alat-alat musik ini membawa kesan mistis dan
-            meriahkan setiap perayaan
+            Fakta menariknya adalah bahwa banyak alat musik ini terinspirasi dari alam sekitar, baik itu suara gemericik air sungai, nyanyian burung hutan, atau keheningan malam di rimba belantara.
           </p>
         </div>
         <img class="border-img" src="img-island/border 1.png" alt="" />
@@ -159,7 +107,7 @@
             alt=""
           />
           <div class="absolute sm:pt-2 md:pt-8 pr-[30%] sm:pr-[35%]">
-            <h1 class="md:text-[30px] text-white">Kahotong</h1>
+            <h1 class="md:text-[30px] text-white">Lalove</h1>
             <p class="text-[10px] md:text-[15px] text-white">
               Kalimantan Barat
             </p>
@@ -179,7 +127,7 @@
               class="listen"
               preload="none"
               data-size="250"
-              src="img-island/kalimantan/audio/1.mp3"
+              src="img-island/kalimantan/audio/Kalbar --Lalove/WhatsApp Audio 2024-02-18 at 20.52.17.mpeg"
             ></audio>
           </div>
           <!-- end -->
@@ -212,7 +160,7 @@
               class="listen"
               preload="none"
               data-size="250"
-              src="img-island/kalimantan/audio/1.mp3"
+              src="img-island/kalimantan/audio/Kalteng -- Katambung/WhatsApp Audio 2024-02-15 at 19.49.02.mpeg"
             ></audio>
           </div>
         </div>
@@ -225,7 +173,7 @@
             alt=""
           />
           <div class="absolute sm:pt-2 md:pt-8 pr-[30%] sm:pr-[35%]">
-            <h1 class="md:text-[30px] text-white">Sope</h1>
+            <h1 class="md:text-[30px] text-white">Sape</h1>
             <p class="text-[10px] md:text-[15px] text-white">
               Kalimantan Timur
             </p>
@@ -244,7 +192,7 @@
               class="listen"
               preload="none"
               data-size="250"
-              src="img-island/kalimantan/audio/1.mp3"
+              src="img-island/kalimantan/audio/Kaltim -- Sape/WhatsApp Audio 2024-02-15 at 20.17.16.mpeg"
             ></audio>
           </div>
         </div>
@@ -276,7 +224,7 @@
               class="listen"
               preload="none"
               data-size="250"
-              src="img-island/kalimantan/audio/1.mp3"
+              src="img-island/kalimantan/audio/Kalut -- Rebab/WhatsApp Audio 2024-02-15 at 20.56.14.mpeg"
             ></audio>
           </div>
         </div>
@@ -308,12 +256,57 @@
               class="listen"
               preload="none"
               data-size="250"
-              src="img-island/kalimantan/audio/1.mp3"
+              src="img-island/kalimantan/audio/Kalsel -- Panting/WhatsApp Audio 2024-02-18 at 11.46.48.mpeg"
             ></audio>
           </div>
         </div>
       </div>
     </section>
+    <footer class="bg-[#1E1712] lg:h-[50vh] h-[30vh]" id="footer">
+      <div class="lg:flex w-screen h-5/6">
+
+          <div class="lg:w-1/3 h-1/4 flex items-center">
+              <h1 class="h4 m-5 underline decoration-2 underline-offset-6">
+              Tradisional Instrumen
+          </h1>
+      </div>
+      <article class=" lg:w-2/3 flex justify-evenly items-center h-3/4 lg:h-full">
+          <div>
+              <h6 class="h6">source</h6>
+              <ul class="lg:p-6 p-2">
+                  <li class="p">youtube</li>
+                  <li class="p">website blog</li>
+                  <li class="p">website berita</li>
+              </ul>
+          </div>
+          <div>
+              <h6 class="h6">Tim</h6>
+              <ul class="lg:p-6 p-2">
+                  <li class="p">Salman</li>
+                  <li class="p">Dani</li>
+                  <li class="p">Nazwa</li>
+                  <li class="p">Salsa</li>
+                  <li class="p">Aulia</li>
+              </ul>
+          </div>
+          <div>
+              <h6 class="h6">Jobdesk</h6>
+              <ul class="lg:p-6 p-2">
+                  <li class="p">Web Developer , UI/UX</li>
+                  <li class="p">Web Developer</li>
+                  <li class="p">Pencari Informasi</li>
+                  <li class="p">Pencari Informasi , UI/UX</li>
+                  <li class="p">Pencari Informasi , UI/UX</li>
+              </ul>
+          </div>
+      </div>
+      <div class="w-screen flex justify-center h-1/6 items-end p-3">
+          <h6 class="h6">copyright© 2024. Tradisional Instrumen</h6>
+      </div>
+      </article>
+
+      
+  </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/9740886e95.js"
@@ -323,6 +316,8 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="global.js"></script>
-    <script src="header.js"></script>
+    <!-- <script src="header.js"></script> -->
+    <script src="../../../global.js"></script>
+
   </body>
 </html>
